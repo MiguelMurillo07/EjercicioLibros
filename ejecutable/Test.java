@@ -32,6 +32,16 @@ public class Test
                 int numeroColeccion = 00;
             }
 
+
+            /*if (numAutores > 1) {
+                for (int i = 0; i < numAutores; i++) {
+                    String nombreAutor = JOptionPane.showInputDialog("Ingrese el nombre del autor " + (i + 1) + ":");
+                    JOptionPane.showMessageDialog(null, "Autor " + (i + 1) + ": " + nombreAutor);
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "El libro tiene un único autor, se llama: "+autor);
+            }/* */
+
         //Creacion objeto autores
         Autores autores = new Autores(autor, añoEdicion);
 
@@ -42,7 +52,7 @@ public class Test
         Biblioteca biblioteca = new Biblioteca(nombre, editorial, edicionLujo, añoEdicion);
 
         //Salida de datos
-        JOptionPane.showMessageDialog(null, "El nombre del libro es: " + biblioteca.mostrarNombre() + "\n" + "Número de autores del libro: "+numAutores+"\nEl nombre del autor es: " + autores.mostrarAutor() + "\n" + "La editorial es: " + biblioteca.mostrarEditorial() + "\n" + "El año de edición es: " + biblioteca.mostrarAñoEdicion() + "\n" + "La edición es: " + biblioteca.mostrarEdicionLujo()+"\nForma parte de Coleccion: "+libroColeccion.mostrarColeccion()+"\nNombre de Colección: "+libroColeccion.mostrarNombreColeccion()+"\nNúmero de Colección: "+libroColeccion.mostrarNumeroColeccion());
+        JOptionPane.showMessageDialog(null, "El nombre del libro es: " + biblioteca.mostrarNombre() + "\n" + "Número de autores del libro: "+numAutores+"\nNombre de autor del libro: "+autores.mostrarAutor() + "\nLa editorial es: " + biblioteca.mostrarEditorial() + "\n" + "El año de edición es: " + biblioteca.mostrarAñoEdicion() + "\n" + "La edición es: " + biblioteca.mostrarEdicionLujo()+"\nForma parte de Coleccion: "+libroColeccion.mostrarColeccion()+"\nNombre de Colección: "+libroColeccion.mostrarNombreColeccion()+"\nNúmero de Colección: "+libroColeccion.mostrarNumeroColeccion());
     }
     
 }
