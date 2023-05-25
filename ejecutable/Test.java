@@ -19,17 +19,18 @@ public class Test
         int añoEdicion = Integer.parseInt(JOptionPane.showInputDialog("Por favor escribe el año de edición: "));
         String edicionLujo = JOptionPane.showInputDialog("Por favor escribe si es edición de lujo: ");
         String coleccion = JOptionPane.showInputDialog("El libro forma parte de una colección? (Si/No): ");
-        
+        String nombreColeccion = "";
+        int numeroColeccion = 00;
 
         if (coleccion.equals("Si"))
             {
-                String nombreColeccion = JOptionPane.showInputDialog("Por favor escribe el nombre de la colección: ");
-                int numeroColeccion = Integer.parseInt(JOptionPane.showInputDialog("Por favor escribe el número de la colección: "));
+                nombreColeccion = JOptionPane.showInputDialog("Por favor escribe el nombre de la colección: ");
+                numeroColeccion = Integer.parseInt(JOptionPane.showInputDialog("Por favor escribe el número de la colección: "));
             }
         else
             {
-                String nombreColeccion = "No es colección";
-                int numeroColeccion = 00;
+                nombreColeccion = "No es colección";
+                numeroColeccion = 00;
             }
 
 
@@ -43,16 +44,16 @@ public class Test
             }/* */
 
         //Creacion objeto autores
-        Autores autores = new Autores(autor, añoEdicion);
+        Autores autores = new Autores(autor, numAutores);
 
         //Creacion objeto libroColeccion
-        LibroColeccion libroColeccion = new LibroColeccion(coleccion, coleccion, añoEdicion);
+        LibroColeccion libroColeccion = new LibroColeccion(coleccion, nombreColeccion, numeroColeccion);
 
         //Creacion objeto biblioteca
         Biblioteca biblioteca = new Biblioteca(nombre, editorial, edicionLujo, añoEdicion);
 
         //Salida de datos
-        JOptionPane.showMessageDialog(null, "El nombre del libro es: " + biblioteca.mostrarNombre() + "\n" + "Número de autores del libro: "+numAutores+"\nNombre de autor del libro: "+autores.mostrarAutor() + "\nLa editorial es: " + biblioteca.mostrarEditorial() + "\n" + "El año de edición es: " + biblioteca.mostrarAñoEdicion() + "\n" + "La edición es: " + biblioteca.mostrarEdicionLujo()+"\nForma parte de Coleccion: "+libroColeccion.mostrarColeccion()+"\nNombre de Colección: "+libroColeccion.mostrarNombreColeccion()+"\nNúmero de Colección: "+libroColeccion.mostrarNumeroColeccion());
+        JOptionPane.showMessageDialog(null, "El nombre del libro es: " + biblioteca.mostrarNombre() + "\n" + "Número de autores del libro: "+autores.mostrarNumAutores()+"\nNombre de autor del libro: "+autores.mostrarAutor() + "\nLa editorial es: " + biblioteca.mostrarEditorial() + "\n" + "El año de edición es: " + biblioteca.mostrarAñoEdicion() + "\n" + "La edición es: " + biblioteca.mostrarEdicionLujo()+"\nForma parte de Coleccion: "+libroColeccion.mostrarColeccion()+"\nNombre de Colección: "+libroColeccion.mostrarNombreColeccion()+"\nNúmero de Colección: "+libroColeccion.mostrarNumeroColeccion());
     }
     
 }

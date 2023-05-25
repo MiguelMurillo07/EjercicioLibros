@@ -7,3 +7,7 @@ Identificación de clases, con sus respectivos atributos y métodos requeridos.
 
 #Diagrama de clases
 ![Diagrama de Clases](class-diagram.png "Diagrama de Clases")
+
+
+# Programa funcionando con el apartado de los autores +1
+![Ejecución Programa](funcionanding.jpg "Programa funcionanding")
