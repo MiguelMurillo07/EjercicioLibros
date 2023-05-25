@@ -2,6 +2,9 @@ package modelo;
 
 public class Autores extends Libros
 {
+    private int numAutores;
+
+    
     public Autores(String autor, int numAutores)
     {
         super();

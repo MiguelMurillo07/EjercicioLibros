@@ -7,8 +7,6 @@ public class Libros
     protected String editorial;
     protected int añoEdicion;
     protected String edicionLujo;
-    
-    protected int numAutores;
 
     public Libros(String nombre, String editorial, int añoEdicion, String edicionLujo)
     {
