@@ -7,10 +7,6 @@ public class Biblioteca extends Libros
         super(nombre, editorial, añoEdicion, edicionLujo);
     }
 
-    public String mostrarResultado()
-    {
-        return this.resultado;
-    }
 
     public String mostrarNombre()
     {
@@ -34,7 +30,15 @@ public class Biblioteca extends Libros
 
     public String mostrarEdicionLujo()
     {
-        return this.edicionLujo;
+        if (edicionLujo.equals("Si"))
+        {
+            return "Edición de lujo";
+        }
+        else
+        {
+            return "Edición normal";
+        }
+        
     }
 
 

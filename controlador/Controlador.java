@@ -2,6 +2,9 @@ package controlador;
 
 import javax.swing.JOptionPane;
 
+import modelo.Autores;
+import modelo.Libros;
+
 public class Controlador 
 {
     public static void main(String[] args) {
@@ -12,5 +15,15 @@ public class Controlador
         int añoEdicion = Integer.parseInt(JOptionPane.showInputDialog("Por favor escribe el año de edición: "));
         String edicionLujo = JOptionPane.showInputDialog("Por favor escribe si es edición de lujo: ");
         
+
+
+        //Creacion objeto Libros
+        Libros libro = new Libros(nombre, editorial, añoEdicion, edicionLujo);
+        
+
+        //Creacion objeto autores
+        Autores autores = new Autores(autor, añoEdicion);
+
+
     }
 }
