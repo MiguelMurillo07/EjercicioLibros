@@ -3,3 +3,7 @@ Cree una clase ejecutable a partir de la cual pueda hacer pruebas mediante la co
 
 # Análisis
 Identificación de clases, con sus respectivos atributos y métodos requeridos.
+
+
+#Diagrama de clases
+![Diagrama de Clases](class-diagram.png "Diagrama de Clases")
