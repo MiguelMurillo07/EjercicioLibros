@@ -13,13 +13,14 @@ public class Autores extends Libros
 
     public String mostrarAutor()
     {
-        if (numAutores > 2)
+        if (numAutores <= 1)
         {
-            return this.autor + " y otros";
+            return this.autor;
+            
         }
         else
         {
-            return this.autor;
+            return this.autor + " y otros";
         }
     }
 
@@ -28,5 +29,5 @@ public class Autores extends Libros
         return this.numAutores;
     }
 
-    
+
 }

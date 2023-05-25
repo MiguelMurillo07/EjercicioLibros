@@ -7,23 +7,17 @@ public class LibroColeccion extends Libros
     private int numeroColeccion;
 
 
-    public LibroColeccion(String nombre, String editorial, int añoEdicion, String edicionLujo, String nombreColeccion, int numeroColeccion)
+    public LibroColeccion(String coleccion, String nombreColeccion, int numeroColeccion)
     {
-        super(nombre, editorial, añoEdicion, edicionLujo);
+        super();
         this.nombreColeccion = nombreColeccion;
         this.numeroColeccion = numeroColeccion;
+        this.coleccion = coleccion;
     }
 
     public String mostrarColeccion()
     {
-        if (coleccion.equals("Si"))
-        {
-            
-        }
-        else
-        {
-            return "No es colección";
-        }
+        return this.coleccion;
     }
 
     public String mostrarNombreColeccion()
